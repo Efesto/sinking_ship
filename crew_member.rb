@@ -8,7 +8,6 @@ class CrewMember
 
   def receive_order(_order)
     say "\e[31mThe water is cold!\e[0m" if @on_the_ship
-    nil
   end
 
   def jump
@@ -16,8 +15,6 @@ class CrewMember
       say "\e[32mJumping!!\e[0m"
       @on_the_ship = false
     end
-
-    nil
   end
 
   def say(message)
